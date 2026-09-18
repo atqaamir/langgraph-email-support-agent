@@ -2,7 +2,6 @@
 
 A LangGraph workflow that triages an incoming customer email, drafts a reply with an LLM, and pauses for human approval when the message looks urgent. It is a compact demo of LangGraph state, nodes, conditional routing, checkpointed memory, and human-in-the-loop interrupts.
 
-The notebook is [email_support_agent.ipynb](email_support_agent.ipynb). It follows the email-agent tutorial from the LangChain Academy [LangGraph Essentials](https://github.com/langchain-ai/lca-langgraph-essentials) course.
 
 ## How it works
 
