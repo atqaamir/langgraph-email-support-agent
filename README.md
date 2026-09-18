@@ -53,6 +53,5 @@ jupyter notebook email_support_agent.ipynb
 
 ### Notes
 
-- Cell 3 imports `doublecheck_env` from `env_utils.py`, a small helper in the course repo that prints masked API-key values. It is only a sanity check. Copy `env_utils.py` from the course repo next to the notebook, or delete that cell.
 - The graph diagram cell calls `draw_mermaid_png()`, which needs internet access.
 - Keep `.env` out of version control.
