@@ -53,14 +53,16 @@ The notebook runs two demos:
 **Requirements:** Python 3.11–3.13 and an OpenAI API key. The notebook uses `gpt-5-mini`.
 
 ```bash
-pip install "langgraph>=1.0" "langchain>=1.0" "langchain-openai>=1.0" python-dotenv ipykernel jupyter
+pip install -r requirements.txt
 ```
 
-Create a `.env` file next to the notebook:
+Create a `.env` file next to the notebook. `example.env` lists the keys the notebook checks for:
 
 ```
 OPENAI_API_KEY=sk-...
 ```
+
+Cell 3 loads `.env` and calls `doublecheck_env("example.env")` from `env_utils.py`, which prints each key from `example.env` with its value masked to the last four characters (or `<not set>`). It is only a sanity check. `LANGSMITH_API_KEY` is listed in `example.env` but is optional for this notebook.
 
 Then open the notebook and run the cells in order:
 
