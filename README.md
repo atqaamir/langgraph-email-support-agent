@@ -56,6 +56,14 @@ The notebook runs two demos:
 pip install -r requirements.txt
 ```
 
+Or, with [uv](https://docs.astral.sh/uv/), which creates a `.venv` and installs the exact versions pinned in `uv.lock`:
+
+```bash
+uv sync
+```
+
+In VS Code, pick the `.venv` interpreter as the notebook kernel.
+
 Create a `.env` file next to the notebook. `example.env` lists the keys the notebook checks for:
 
 ```
